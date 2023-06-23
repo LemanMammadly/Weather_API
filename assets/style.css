@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;1,100;1,200;1,300;1,400;1,500;1,700;1,800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+.all-weather {
+  background-image: url("../assets/img/sunback.jpeg");
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.city {
+  width: 1000px;
+  height: 600px;
+  margin: auto;
+  background-image: url("../assets/img/bakuuu.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+}
+.sun-cloud{
+  width: 25px;
+  margin-bottom: 4px;
+}
+
+.left-weather-info {
+  height: 600px !important;
+}
+
+.weather-info .date {
+  padding: 40px;
+  font-size: 20px;
+  z-index: 3333333 !important;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.temp {
+  color: #fff;
+  font-size: 120px;
+  font-weight: 600;
+}
+
+.country {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.how-weather {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.bottom-left {
+  padding: 40px;
+}
+
+.right-weather-info {
+  width: 600px;
+}
+
+.wind {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  color: #fff;
+  font-size: 20px;
+  padding: 30px 0;
+}
+
+.wind-img{
+  width: 30px;
+  margin: auto;
+}
+
+.search-input {
+  color: #fff;
+  transition: all 0.3s;
+  position: relative;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.search-input:focus {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.search-input {
+  transition: all 0.3s;
+}
+.search-input:hover {
+  letter-spacing: 2px;
+}
+
+.btn-search {
+  margin-left: 10px;
+}
+
+button {
+  appearance: none;
+  border: none;
+  font-size: inherit;
+  border-radius: 2em;
+  padding: 0.75em 1em;
+  background: rgba( 98, 98, 98, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 5.5px );
+  -webkit-backdrop-filter: blur( 5.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  display: inline-flex;
+  align-items: center;
+  cursor: wait;
+}
+.spinner {
+  --size: 1.25em;
+  --offset-r: calc(var(--size) * -1);
+  --offset-l: 0;
+  --opacity: 0;
+  position: relative;
+  display: inline-flex;
+  height: var(--size);
+  width: var(--size);
+  margin-top: calc(var(--size) * -0.5);
+  margin-right: var(--offset-r);
+  margin-bottom: calc(var(--size) * -0.5);
+  margin-left: var(--offset-l);
+  box-sizing: border-box;
+  border: 0.125em solid rgba(255, 255, 255, 0.333);
+  border-top-color: white;
+  border-radius: 50%;
+  opacity: var(--opacity);
+  transition: 0.25s;
+}
+button:active .spinner,
+button:focus .spinner,
+button:hover .spinner {
+  --width: 1em;
+  --offset-r: 0.333em;
+  --offset-l: -0.333em;
+  --opacity: 1;
+  animation: 0.666s load infinite;
+}
+@keyframes load {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
